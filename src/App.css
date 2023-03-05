@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ESTILOS APP.JS Y NAV */
+.navbarblue {
+  display: flex;
+  flex-direction: row;
+  background-color: hwb(195 33% 9%);
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+  box-sizing: border-box;
 }
+.iconStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
+}
+/* ESTILOS HOME */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  max-width: 50vw;
+  text-align: justify;
+}
+.nolink {
+  text-decoration: none;
+  color: inherit;
+  padding: 20px;
+}
+.nolink:hover {
+  background-color: hwb(195 33% 9%);
+  color: #fff;
+}
+.centralContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60vh;
+    margin: 0 auto;
+}
+/* ESTILOS ALLBEERS */
+.beerCard{
+  display: flex;
+  flex-direction: row;
+  padding: 3vw;
+  border-color: #282c34;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.smallImage{
+  height: auto;
+  width: 5vw;
+  padding-right: 1vw;
+}
+.beerCardInfo{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
+  min-width: 20vw;
+  max-width: 20vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.italicstyle{
+  font-style: italic;
+  font-size: small;
+}
+h3{
+  font-size: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* BEER DETAILS */
+.biggerImage{
+  height: auto;
+  width: 8vw;
+  margin-right: 4vw;
+}
+.rowContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 80vh;
+  margin: 0 auto;
+  border-color: #282c34;
+  border-width: 1px;
+  border-style: solid;
+  padding: 30px;
+  border-radius: 15px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn-danger-15 {
+  width: 115px;
 }
